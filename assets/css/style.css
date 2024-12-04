@@ -1,0 +1,340 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  /* border: 1px solid red; */
+}
+
+*::-moz-selection {
+  color: #fff;
+  background-color: #1770c8
+}
+
+*::selection {
+  color: #fff;
+  background-color: #1770c8
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111827;
+  background-color: #fff;
+}
+
+section {
+  display: flex;
+  background-color: #f0f0f0;
+}
+
+.onboarding-carousel-btn .carousel-control-next,
+.carousel-control-prev {
+  align-items: end;
+}
+
+.onboarding-carousel-btn .carousel-control-prev {
+  left: 70%;
+}
+
+.onboarding-carousel-btn .carousel-control-next,
+.onboarding-carousel-btn .carousel-control-prev {
+  top: auto;
+  bottom: 10px;
+  width: 12%;
+  height: 8%;
+}
+
+
+.onboarding-block {
+  color: #FFFFFF;
+  background-color: #0F0202;
+}
+.cover-img{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.company-logo {
+  position: absolute;
+  top: 40px;
+  left: 32px;
+}
+
+.company-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.onboarding-right {
+  width: 100%;
+  padding: 25px;
+}
+
+.onboarding-right .progress-status {
+  padding-bottom: 20px;
+
+}
+
+.onboarding-right .progress-status ul {
+  list-style: none;
+  /* margin: 0; */
+  padding: 0;
+  display: flex;
+  justify-content: start;
+}
+
+.onboarding-right .progress-status ul li {
+  margin-right: 25px;
+}
+
+.onboarding-right .progress-status ul li:last-child {
+  margin-right: 0;
+}
+
+.onboarding-right .progress-status ul li p {
+  content: "";
+  height: 8px;
+  width: 150px;
+  margin-bottom: 0;
+  border-radius: 50px;
+  background-color: #CB212833;
+}
+
+.onboarding-right .progress-status ul li p.active {
+  background-color: #CB2128;
+}
+
+.onboarding-right .progress-status .status-tittle p {
+  font-size: 13px;
+}
+
+.progress-main-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.main-title h1 {
+  font-size: 24px;
+}
+
+.main-title p {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+/* .main-tittle-btn{
+
+} */
+.progress-main-bottom form h4 {
+  font-size: 13px;
+}
+
+.progress-main-bottom form label {
+  font-size: 12px;
+}
+
+/* Additional Custom Styles */
+.form-check-inline {
+  display: flex;
+  align-items: center;
+  /* background-color: #2d2d2d; */
+  border: 1px solid #333333;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.progress-main-bottom .form-check-input {
+  display: none;
+}
+
+
+.form-check-input:checked+.form-check-label {
+  background-color: #4caf50;
+  /* Green background when active */
+  color: white;
+  border-color: #4caf50;
+}
+
+.form-check-label {
+  padding-left: 0.5rem;
+}
+
+
+.tags-input {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #333333;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+  list-style-type: none;
+}
+
+.tags-list li {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  background-color: #E2E8F0;
+  color: #1A202C;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tags-list li .remove-tag {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #1A202C;
+}
+
+.tag-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.suggestions {
+  position: absolute;
+  background: #161616;
+  /* border: 1px solid #444; */
+  border-radius: 3px;
+  margin-top: 50px;
+  width: 150px;
+  max-height: max-content;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestions div {
+  padding: 5px 12px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.suggestions div:hover {
+  background: #555;
+}
+
+.design-mode-container {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Centering the radio buttons */
+.custom-radio-group {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Style for the radio button labels */
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Basic radio button styling */
+.radio-label input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Active state with red border for the first radio button */
+input#mode-on:checked {
+  border: 1px solid red;
+}
+
+/* Style for the text next to the radio button */
+.radio-text {
+  font-size: 16px;
+  color: #fff;
+}
+
+input[type="radio"]:checked::before {
+  content: none !important;
+}
+
+/* Remove default radio button appearance */
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Add custom border color when checked */
+input[type="radio"]:checked {
+  border-color: #CB2128;
+}
+
+/* Add inner circle when checked */
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #CB2128;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .btn {
+  border-radius: 6px;
+  padding: 12px 24px;
+}
+
+.navigation .btn.back {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.navigation .btn.next {
+  color: #FFFFFF;
+  background-color: #CB2128;
+  font-size: 14px;
+}
